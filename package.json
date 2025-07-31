@@ -1,0 +1,19 @@
+{
+  "name": "invoice-generator",
+  "version": "1.0.0",
+  "description": "A simple invoice generator using web technologies.",
+  "main": "src/generate-pdf.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "invoice",
+    "pdf",
+    "generator"
+  ],
+  "author": "Navalona Ramanantoanina",
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^22.10.0"
+  }
+}

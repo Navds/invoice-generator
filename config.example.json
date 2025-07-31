@@ -1,0 +1,44 @@
+{
+  "myCompany": {
+    "name": "Your Name",
+    "address": "Your Address",
+    "email": "Your Email",
+    "nif": "YOUR-NIF",
+    "stat": "YOUR-STAT",
+    "bankAccounts": [
+      {
+        "name": "Your Bank Name",
+        "accountName": "Your Name",
+        "accountNumber": "1234567890",
+        "iban": "YOURIBAN1",
+        "swift": "YOURSWIFT1",
+        "active": true
+      },
+      {
+        "name": "Another Bank Name",
+        "accountName": "Your Business Name",
+        "accountNumber": "0987654321",
+        "iban": "YOURIBAN2",
+        "swift": "YOURSWIFT2",
+        "active": false
+      }
+    ]
+  },
+      "clients": {
+        "ACME": {
+            "name": "ACME Inc.",
+            "address": "123 Main St, Anytown, USA",
+            "email": "billing@acme.com",
+            "prefix": "ACM",
+            "rate": 50,
+            "attentionTo": "Accounts Payable Department"
+        },
+        "XYZ": {
+            "name": "XYZ Corp.",
+            "address": "456 Oak Ave, Sometown, USA",
+            "email": "accounts@xyz.com",
+            "prefix": "XYZ",
+            "rate": 60
+        }
+    }
+}

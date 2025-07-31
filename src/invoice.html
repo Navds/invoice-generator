@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="invoice-box">
+        <header>
+            <h1>Invoice</h1>
+            <div class="invoice-details">
+                <p><strong>Invoice #:</strong> {{invoiceNumber}}</p>
+                <p><strong>Date:</strong> {{date}}</p>
+                <!-- <p><strong>Due Date:</strong> {{dueDate}}</p> -->
+            </div>
+        </header>
+        <section class="company-details">
+            <div>
+                <h2>From:</h2>
+                <p>
+                    <strong>{{myCompanyName}}</strong><br>
+                    <i class="fas fa-location-dot"></i> {{myCompanyAddress}}<br>
+                    <i class="fas fa-envelope"></i> <a href="mailto:{{myCompanyEmail}}">{{myCompanyEmail}}</a><br>
+                    <em>Registration:</em> {{myCompanyNif}}<br>
+                    <em>VAT:</em> {{myCompanyStat}}
+                </p>
+            </div>
+            <div>
+                <h2>To:</h2>
+                <p>
+                    <strong>{{clientName}}</strong><br>
+                    {{attentionToLine}}{{clientAddress}}<br>
+                    {{clientEmail}}
+                </p>
+            </div>
+        </section>
+        <h2>Invoice Details</h2>
+        <div class="main-content-grid">
+            <section class="invoice-items">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Description</th>
+                            <th>Hours</th>
+                            <th>Rate</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{invoiceItems}}
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3" class="total">Total</td>
+                            <td class="total">€{{totalAmount}}</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="vat-note">* VAT not applicable</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+            <section class="timesheet">
+                <div class="calendar-container">
+                    <table class="calendar">
+                        <thead>
+                            <tr>
+                                <th colspan="7" class="calendar-month-header">{{monthYear}}</th>
+                            </tr>
+                            <tr>
+                                <th>Sun</th>
+                                <th>Mon</th>
+                                <th>Tue</th>
+                                <th>Wed</th>
+                                <th>Thu</th>
+                                <th>Fri</th>
+                                <th>Sat</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {{calendarBody}}
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+        <section class="payment-instructions">
+            <h2>Payment Instructions</h2>
+            {{paymentInstructions}}
+        </section>
+        <!-- <footer>
+            <p>Thank you for your business!</p>
+        </footer> -->
+    </div>
+</body>
+</html>

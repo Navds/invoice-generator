@@ -1,0 +1,202 @@
+body {
+    font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+    color: #555;
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+.invoice-box {
+    max-width: 800px;
+    margin: auto;
+    border: 1px solid #eee;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+    font-size: 16px;
+    line-height: 24px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.invoice-box header {
+    background: #2c3e50;
+    color: #ffffff;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.invoice-box header h1 {
+    margin: 0;
+    color: #ffffff;
+}
+
+.invoice-box header .invoice-details p {
+    margin: 0;
+    text-align: right;
+}
+
+.invoice-box .company-details a {
+    font-family: "Segoe UI Symbol", "Arial Unicode MS", sans-serif;
+}
+
+.invoice-box .company-details {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 30px 0px 30px;
+}
+.invoice-box .company-details p {
+    font-size: 0.9rem;
+}
+
+.invoice-box h2 {
+    /* No general padding here */
+}
+
+.invoice-box > h2 { /* Specific rule for 'Invoice Details' heading */
+    background: #2c3e50;
+    color: #ffffff;
+    padding: 10px 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.invoice-box .main-content-grid {
+    display: grid;
+    grid-template-columns: 6fr 5fr;
+    gap: 10px;
+    align-items: start;
+    padding: 0 30px;
+}
+
+.invoice-box .invoice-items table {
+    width: 100%;
+    line-height: inherit;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.invoice-box .invoice-items table td, .invoice-box .invoice-items table th {
+    padding: 10px;
+    vertical-align: top;
+    border-bottom: 1px solid #eee;
+}
+
+.invoice-box .invoice-items table th {
+    background: #eee;
+    font-weight: bold;
+}
+
+.invoice-box .invoice-items table .total {
+    font-weight: bold;
+    text-align: right;
+}
+
+.invoice-box .invoice-items table .vat-note {
+    font-size: 0.8rem;
+    color: #777;
+    font-style: italic;
+    text-align: center;
+    border: none;
+    padding: 5px 10px;
+}
+
+.invoice-box .timesheet .calendar-container {
+    width: 100%;
+    margin: 0;
+}
+
+.invoice-box .timesheet .calendar {
+    width: 100%; /* Minimum width to ensure cells don't become too narrow */
+    min-width: 280px;
+    border-collapse: collapse;
+}
+
+.invoice-box .timesheet .calendar .calendar-month-header {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    background: #eee;
+}
+
+.invoice-box .timesheet .calendar th {
+    text-align: center;
+    padding: 5px;
+    width: 45px;
+    border: 1px solid #eee;
+    background: #f9f9f9;
+    font-size: 12px;
+}
+
+.invoice-box .timesheet .calendar td {
+    border: 1px solid #eee;
+    height: 40px;
+    width: 45px;
+    padding: 0;
+    position: relative;
+    text-align: center;
+}
+
+.invoice-box .timesheet .calendar td.weekend {
+    background-color: #f5f5f5;
+}
+
+.invoice-box .timesheet .calendar .day {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 40px; /* Vertically center */
+}
+
+.invoice-box .timesheet .calendar .hours {
+    position: absolute;
+    bottom: 1px;
+    right: 3px;
+    font-size: 10px;
+    color: #777;
+    font-style: italic;
+}
+
+.invoice-box .payment-instructions {
+    padding: 30px;
+}
+
+.invoice-box .payment-instructions h2 {
+    background: #2c3e50;
+    color: #ffffff;
+    padding: 10px 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.invoice-box .payment-instructions .two-column-layout {
+    display: flex;
+    justify-content: space-between;
+}
+
+.invoice-box .payment-instructions .bank-card {
+    width: 48%;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.invoice-box .payment-instructions .bank-details {
+    padding-bottom: 5px;
+}
+
+/* .invoice-box footer {
+    background: #2c3e50;
+    color: #ffffff;
+    padding: 20px 30px;
+    text-align: center;
+    font-style: italic;
+} */
